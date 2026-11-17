@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Portofolio Airlangga Putra Sumadi, mahasiswa Pendidikan Ilmu Komputer yang tertarik pada jaringan komputer dan web."
+      name="description"
+    />
+    <title>Airlangga Putra Sumadi</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a aria-label="AIRS, ke beranda" class="logo" href="#beranda">AIRS.</a>
+      <button
+        aria-controls="menu-utama"
+        aria-expanded="false"
+        class="tombol-menu"
+        id="tombol-menu">
+        Menu
+      </button>
+      <nav aria-label="Navigasi utama" class="menu-utama" id="menu-utama">
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#sertifikat">Sertifikat</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+    <main>
+      <section class="beranda" id="beranda">
+        <div class="teks-beranda">
+          <h1>Airlangga Putra Sumadi.</h1>
+          <p class="pengantar">
+            Mahasiswa S1 Pendidikan Ilmu Komputer UPI yang tertarik pada
+            jaringan komputer, perangkat keras, administrasi Linux, dan
+            pengembangan web.
+          </p>
+          <div class="aksi-beranda">
+            <a class="tombol tombol-gelap" href="#proyek">Lihat proyek &rarr; <span aria-hidden="true"></span></a>
+            <a class="tautan-biasa" href="mailto:airlanggaputras08@student.upi.edu">Hubungi saya</a>
+          </div>
+        </div>
+        <figure class="foto-utama">
+          <img
+            alt="Foto profil Airlangga Putra Sumadi"
+            src="aset/fotoprofil.jpg"/>
+        </figure>
+      </section>
+      <section class="bagian pendidikan" id="pendidikan">
+        <div class="judul-bagian">
+          <h2>Tempat saya belajar.</h2>
+        </div>
+        <div class="daftar-pendidikan">
+          <article class="baris-pendidikan">
+            <div>
+              <p class="tahun">2025 &mdash; Sekarang</p>
+              <h3>Universitas Pendidikan Indonesia</h3>
+              <p class="detail">S1 Pendidikan Ilmu Komputer &middot; FPMIPA</p>
+              <p>
+                Mempelajari ilmu komputer, ilmu pedagogi, dan cara menyampaikan
+                konsep teknologi melalui pembelajaran.
+              </p>
+            </div>
+            <img
+              alt="Gedung Universitas Pendidikan Indonesia"
+              loading="lazy"
+              src="aset/isola.jpg"
+            />
+          </article>
+          <article class="baris-pendidikan">
+            <div>
+              <p class="tahun">2022 &mdash; 2025</p>
+              <h3>SMK Negeri 5 Bandung</h3>
+              <p class="detail">Teknik Komputer dan Jaringan</p>
+              <p>
+                Belajar konfigurasi jaringan LAN/WAN, subnetting, routing,
+                Linux, serta perawatan perangkat komputer.
+              </p>
+            </div>
+            <img
+              alt="Lingkungan praktik teknik komputer dan jaringan"
+              loading="lazy"
+              src="aset/smk5.jpg"
+            />
+          </article>
+        </div>
+      </section>
+      <section class="bagian sertifikat" id="sertifikat">
+        <div class="judul-bagian">
+          <h2>Sertifikat yang saya kumpulkan.</h2>
+          <p>
+            Berikut beberapa materi dan kompetensi yang pernah saya pelajari. Pilih
+            sertifikat untuk melihat dokumennya.
+          </p>
+        </div>
+        <div class="daftar-sertifikat">
+          <button
+            aria-pressed="true"
+            class="baris-sertifikat"
+            data-sertifikat="0"
+            type="button"
+          >
+            <span class="angka"> 01 </span>
+            <span>
+              <strong> MikroTik Certified Network Associate (MTCNA) </strong>
+              <small> MikroTikls SIA &middot; Jaringan </small>
+            </span>
+            <span aria-hidden="true" class="panah"> &nearrow; </span>
+          </button>
+          <button
+            aria-pressed="false"
+            class="baris-sertifikat"
+            data-sertifikat="1"
+            type="button"
+          >
+            <span class="angka"> 02 </span>
+            <span>
+              <strong> IT Specialist: Networking </strong>
+              <small> Certiport / Pearson VUE &middot; Jaringan </small>
+            </span>
+            <span aria-hidden="true" class="panah"> &nearrow; </span>
+          </button>
+          <button
+            aria-pressed="false"
+            class="baris-sertifikat"
+            data-sertifikat="2"
+            type="button"
+          >
+            <span class="angka"> 03 </span>
+            <span>
+              <strong>
+                Axioo Technology Specialist: ACP #1 &mdash; Hardware Fundamental
+              </strong>
+              <small> PT Tera Data Indonusa &middot; Hardware </small>
+            </span>
+            <span aria-hidden="true" class="panah"> &nearrow; </span>
+          </button>
+          <button
+            aria-pressed="false"
+            class="baris-sertifikat"
+            data-sertifikat="3"
+            type="button"
+          >
+            <span class="angka"> 04 </span>
+            <span>
+              <strong> Huawei AI Basic: Overview of AI </strong>
+              <small> Huawei Talent Online &middot; Kecerdasan buatan </small>
+            </span>
+            <span aria-hidden="true" class="panah"> &nearrow; </span>
+          </button>
+          <button
+            aria-pressed="false"
+            class="baris-sertifikat"
+            data-sertifikat="4"
+            type="button"
+          >
+            <span class="angka"> 05 </span>
+            <span>
+              <strong>
+                AI Ready ASEAN &mdash; Certificate of Completion
+              </strong>
+              <small>
+                ASEAN Foundation &amp; Google.org &middot; Kecerdasan buatan
+              </small>
+            </span>
+            <span aria-hidden="true" class="panah"> &nearrow; </span>
+          </button>
+        </div>
+        <div class="pratinjau-sertifikat">
+          <img
+            alt="Dokumen sertifikat MikroTik MTCNA"
+            id="gambar-sertifikat"
+            loading="lazy"
+            src="aset/MTCNA-1.png"
+          />
+          <p id="nama-sertifikat">
+            MikroTik Certified Network Associate (MTCNA)
+          </p>
+        </div>
+      </section>
+      <section class="bagian proyek" id="proyek">
+        <div class="judul-bagian">
+          <h2>Pengalaman dan proyek.</h2>
+        </div>
+        <div class="grid-proyek">
+          <article class="proyek-utama">
+            <img
+              alt="Sertifikat juara lomba web design SE FEST 2023"
+              loading="lazy"
+              src="aset/lomba web_11zon (1).jpg"
+            />
+            <div class="isi-proyek">
+              <p class="detail">Prestasi - SE FEST 2023</p>
+              <h3>Juara 1 Lomba Web Design Tingkat Nasional</h3>
+              <p>
+                Merancang antarmuka web edukasi bertema aksi iklim (17 SDG) dan
+                keberlanjutan lingkungan bersama tim SMK Negeri 5 Bandung.
+              </p>
+            </div>
+          </article>
+          <article class="proyek-kedua">
+            <img
+              alt="Dokumentasi pengalaman praktik IT support dan jaringan"
+              loading="lazy"
+              src="aset/sidang pkl.png"
+            />
+            <div class="isi-proyek">
+              <p class="detail">Pengalaman lapangan &middot; Fakultas Hukum Universitas Pasundan</p>
+              <h3>IT Support dan Infrastruktur Jaringan</h3>
+              <p>
+                Membantu maintenance perangkat, instalasi sistem operasi, dan
+                penanganan kendala jaringan selama PKL.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="bagian keahlian" id="keahlian">
+        <div class="judul-bagian">
+          <h2>Keahlian teknis.</h2>
+        </div>
+        <div class="grid-keahlian">
+          <article>
+            <span class="angka"> 01 </span>
+            <h3>Jaringan &amp; sistem</h3>
+            <p>
+              TCP/IP, subnetting CIDR & VLSM, routing, MikroTik RouterOS, Linux CLI,
+              dan dasar administrasi server.
+            </p>
+          </article>
+          <article>
+            <span class="angka"> 02 </span>
+            <h3>Hardware &amp; IT support</h3>
+            <p>
+              Perakitan PC, perawatan laptop, instalasi sistem operasi, crimping
+              kabel, dan troubleshooting dasar.
+            </p>
+          </article>
+          <article>
+            <span class="angka"> 03 </span>
+            <h3>Pengembangan web sederhana</h3>
+            <p>
+              HTML, CSS, JavaScript dan pembuatan User Interface 
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="bagian kontak" id="kontak">
+        <div>
+          <h2>Hubungi saya.</h2>
+          <p>
+            Saya terbuka untuk diskusi seputar jaringan komputer, web, kegiatan
+            akademik, dan peluang belajar bersama.
+          </p>
+        </div>
+        <div class="tautan-kontak">
+          <a href="mailto:airlanggaputras08@student.upi.edu">
+            <span> Email </span>
+            <strong> airlanggaputras08@student.upi.edu &nearrow; </strong>
+          </a>
+          <a
+            href="https://wa.me/6289656614865"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span> WhatsApp </span>
+            <strong> 089656614865 &nearrow; </strong>
+          </a>
+          <div>
+            <span> Lokasi </span>
+            <strong> Bandung, Jawa Barat </strong>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="#beranda"> AIRS. </a>
+      <p>Airlangga Putra Sumadi</p>
+      <p>
+        &copy;
+        <span id="tahun-sekarang"> 2026 </span>
+      </p>
+    </footer>
+  </body>
+</html>
